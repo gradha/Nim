@@ -28,13 +28,11 @@ pkg "docopt"
 pkg "flippy", "", "", true
 pkg "fragments", "nim c -r fragments/dsl.nim"
 pkg "gara"
-pkg "genoiser", "", "", true
 pkg "glm"
 pkg "glob"
 pkg "gnuplot"
 pkg "graphemes"
 pkg "hts", "nim c -o:htss -r src/hts.nim"
-pkg "httpauth", "", "", true
 pkg "inim"
 pkg "itertools", "nim doc src/itertools.nim"
 pkg "iterutils"
