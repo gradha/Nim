@@ -17,7 +17,7 @@ pkg "cascade"
 pkg "chroma"
 pkg "chroma"
 pkg "chronicles", "nim c -o:chr -r chronicles.nim", "", true
-pkg "chrono", "", "", true
+# pkg "chrono", "", "", true
 pkg "chronos"
 pkg "cligen", "nim c -o:cligenn -r cligen.nim"
 pkg "combparser"
@@ -25,7 +25,6 @@ pkg "compactdict"
 pkg "criterion"
 pkg "dashing", "nim c tests/functional.nim"
 pkg "docopt"
-pkg "flippy", "", "", true
 pkg "fragments", "nim c -r fragments/dsl.nim"
 pkg "gara"
 pkg "glm"
@@ -47,10 +46,8 @@ pkg "nimcrypto", "nim c -r tests/testapi.nim"
 pkg "NimData", "nim c -o:nimdataa src/nimdata.nim", "", true
 pkg "nimes", "nim c src/nimes.nim", "", true
 pkg "nimgame2", "nim c nimgame2/nimgame.nim", "", true
-pkg "nimgen", "", "", true
-pkg "nimhdf5", "", "", true
-pkg "nimi3status", "nim c nimi3status.nim", "", true
-pkg "nimlsp", "", "", true
+pkg "nimgen", "nim c -o:nimgenn -r src/nimgen/runcfg.nim", "", true
+# pkg "nimlsp", "", "", true
 pkg "nimly", "nim c -r tests/test_nimly", "", true
 pkg "nimongo", "nimble test_ci", "", true
 pkg "nimpy", "nim c -r tests/nimfrompy.nim"
@@ -69,7 +66,7 @@ pkg "protobuf", "nim c -o:protobuff -r src/protobuf.nim", "", true
 # pkg "redis"
 pkg "regex", "nim c src/regex", "", true
 pkg "result", "nim c -r result.nim"
-pkg "ringdeque"
+# pkg "ringdeque" # failing?
 pkg "rosencrantz", "nim c -o:rsncntz -r rosencrantz.nim"
 pkg "sdl1", "nim c -r src/sdl.nim"
 pkg "sdl2_nim", "nim c -r sdl2/sdl.nim"
