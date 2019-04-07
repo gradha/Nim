@@ -31,7 +31,7 @@ pkg "neo", "nim c -d:blas=openblas tests/all.nim", "", true
 pkg "nicy", "nim c src/nicy.nim"
 pkg "nigui", "nim c -o:niguii -r src/nigui.nim"
 pkg "nimcrypto", "nim c -r tests/testapi.nim"
-pkg "NimData", "nim c -o:nimdataa -r src/nimdata.nim", "", true
+pkg "NimData", "nim c -o:nimdataa src/nimdata.nim", "", true
 pkg "nimes", "nim c src/nimes.nim", "", true
 pkg "nimgame2", "nim c nimgame2/nimgame.nim", "", true
 pkg "nimly", "nim c -r tests/test_nimly", "", true
