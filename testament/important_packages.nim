@@ -23,7 +23,7 @@ pkg "cligen", "nim c -o:cligenn -r cligen.nim"
 pkg "combparser"
 pkg "compactdict"
 pkg "criterion"
-pkg "dashing", "nim c -r tests/functional.nim"
+pkg "dashing", "nim c tests/functional.nim"
 pkg "docopt"
 pkg "flippy", "", "", true
 pkg "fragments", "nim c -r fragments/dsl.nim"
@@ -31,7 +31,7 @@ pkg "gara"
 pkg "glm"
 pkg "glob"
 pkg "gnuplot"
-pkg "graphemes"
+# pkg "graphemes"
 pkg "hts", "nim c -o:htss -r src/hts.nim"
 pkg "inim"
 pkg "itertools", "nim doc src/itertools.nim"
@@ -55,12 +55,9 @@ pkg "nimly", "nim c -r tests/test_nimly", "", true
 pkg "nimongo", "nimble test_ci", "", true
 pkg "nimpy", "nim c -r tests/nimfrompy.nim"
 pkg "nimquery"
-pkg "nimsl"
 pkg "nimsl", "", "", true
 pkg "nimsvg"
-pkg "nimsvg"
 pkg "nimx", "nim c --threads:on test/main.nim", "", true
-pkg "nlopt"
 pkg "norm", "nim c -o:normm src/norm.nim"
 pkg "normalize", "", "", true
 pkg "npeg"
@@ -69,7 +66,7 @@ pkg "parsetoml"
 pkg "patty"
 pkg "plotly", "nim c examples/all.nim", "", true
 pkg "protobuf", "nim c -o:protobuff -r src/protobuf.nim", "", true
-pkg "redis"
+# pkg "redis"
 pkg "regex", "nim c src/regex", "", true
 pkg "result", "nim c -r result.nim"
 pkg "ringdeque"
