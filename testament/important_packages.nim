@@ -15,7 +15,6 @@ pkg "bncurve", "", "", true
 pkg "c2nim", "nim c testsuite/tester.nim"
 pkg "cascade"
 pkg "chroma"
-pkg "chroma"
 pkg "chronicles", "nim c -o:chr -r chronicles.nim", "", true
 # pkg "chrono", "", "", true
 pkg "chronos"
@@ -27,7 +26,7 @@ pkg "dashing", "nim c tests/functional.nim"
 pkg "docopt"
 pkg "fragments", "nim c -r fragments/dsl.nim"
 pkg "gara"
-pkg "glm"
+# pkg "glm" # --> works on linux
 pkg "glob"
 pkg "gnuplot"
 # pkg "graphemes"
@@ -56,7 +55,7 @@ pkg "nimsl", "", "", true
 pkg "nimsvg"
 pkg "nimx", "nim c --threads:on test/main.nim", "", true
 pkg "norm", "nim c -o:normm src/norm.nim"
-pkg "normalize", "", "", true
+# pkg "normalize", "", "", true
 pkg "npeg"
 pkg "ormin", "nim c -o:orminn ormin.nim", "", true
 pkg "parsetoml"
@@ -66,18 +65,16 @@ pkg "protobuf", "nim c -o:protobuff -r src/protobuf.nim", "", true
 # pkg "redis"
 pkg "regex", "nim c src/regex", "", true
 pkg "result", "nim c -r result.nim"
-# pkg "ringdeque" # failing?
 pkg "rosencrantz", "nim c -o:rsncntz -r rosencrantz.nim"
 pkg "sdl1", "nim c -r src/sdl.nim"
 pkg "sdl2_nim", "nim c -r sdl2/sdl.nim"
 pkg "stint", "nim c -o:stintt -r stint.nim"
 pkg "strunicode", "nim c -r src/strunicode.nim", "", true
-pkg "timezones"
-pkg "tiny_sqlite" # or tinysqlite?
-pkg "typography", "", "", true
+pkg "timezones", "nim c -r tests/tests.nim"
+pkg "tiny_sqlite"
+# pkg "typography", "", "", true
 pkg "unicodedb"
 pkg "unicodeplus", "", "", true
 pkg "unpack"
-pkg "untar", "nim c -o:untarr -r src/untar.nim"
 pkg "yaml"
 pkg "zero_functional", "nim c -r test.nim"
