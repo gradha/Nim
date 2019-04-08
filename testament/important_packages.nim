@@ -16,7 +16,6 @@ pkg "c2nim", "nim c testsuite/tester.nim"
 pkg "cascade"
 pkg "chroma"
 pkg "chronicles", "nim c -o:chr -r chronicles.nim", true
-# pkg "chrono", "", true
 pkg "chronos"
 pkg "cligen", "nim c -o:cligenn -r cligen.nim"
 pkg "combparser"
@@ -27,11 +26,9 @@ pkg "dashing", "nim c tests/functional.nim"
 pkg "docopt"
 pkg "fragments", "nim c -r fragments/dsl.nim"
 pkg "gara"
-# pkg "glm" # --> works on linux
 pkg "glob"
 pkg "gnuplot"
-# pkg "godot", "nim c -r godot/godot.nim" # --> not yet compatible with Nim 0.19
-# pkg "graphemes"
+# pkg "godot", "nim c -r godot/godot.nim" # not yet compatible with Nim 0.19
 pkg "hts", "nim c -o:htss -r src/hts.nim"
 pkg "inim"
 pkg "itertools", "nim doc src/itertools.nim"
@@ -60,7 +57,6 @@ pkg "nimsl", "", true
 pkg "nimsvg"
 pkg "nimx", "nim c --threads:on test/main.nim", true
 pkg "norm", "nim c -o:normm src/norm.nim"
-# pkg "normalize", "", "", true
 pkg "npeg"
 pkg "ormin", "nim c -o:orminn ormin.nim", true
 pkg "parsetoml"
@@ -68,7 +64,6 @@ pkg "patty"
 pkg "plotly", "nim c examples/all.nim", true
 pkg "protobuf", "nim c -o:protobuff -r src/protobuf.nim", true
 pkg "random", "nim c -r tests/test.nim"
-# pkg "redis"
 pkg "regex", "nim c src/regex", true
 pkg "result", "nim c -r result.nim"
 pkg "rosencrantz", "nim c -o:rsncntz -r rosencrantz.nim"
@@ -78,7 +73,6 @@ pkg "snake", "nim c snake/server.nim", true, "https://github.com/dom96/snake"
 pkg "stint", "nim c -o:stintt -r stint.nim"
 pkg "strunicode", "nim c -r src/strunicode.nim", true
 pkg "tiny_sqlite"
-# pkg "typography", "", true
 pkg "unicodedb"
 pkg "unicodeplus", "", true
 pkg "unpack"
