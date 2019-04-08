@@ -470,15 +470,15 @@ proc getPackageDir(package: string): string =
 iterator listPackages(): tuple[name, url, cmd: string, hasDeps: bool] =
   let defaultCmd = "nimble test"
   let packageList = parseFile(packageIndex)
-  for n, cmd, commit, hasDeps in important_packages.packages.items:
+  for n, cmd, hasDeps, url in important_packages.packages.items:
     var found = false
     for package in packageList.items:
       let name = package["name"].str
       if name == n:
         found = true
-        let url = package["url"].str
+        let p_url = package["url"].str
         let cmd = if cmd.len == 0: defaultCmd else: cmd
-        yield (name, url, cmd, hasDeps)
+        yield (name, p_url, cmd, hasDeps)
         break
     if not found:
       raise newException(ValueError, "Cannot find package '$#'." % n)
