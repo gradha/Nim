@@ -70,7 +70,6 @@ pkg "sdl1", "nim c -r src/sdl.nim"
 pkg "sdl2_nim", "nim c -r sdl2/sdl.nim"
 pkg "stint", "nim c -o:stintt -r stint.nim"
 pkg "strunicode", "nim c -r src/strunicode.nim", "", true
-pkg "timezones", "nim c -r tests/tests.nim"
 pkg "tiny_sqlite"
 # pkg "typography", "", "", true
 pkg "unicodedb"
