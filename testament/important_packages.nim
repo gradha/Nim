@@ -31,7 +31,6 @@ pkg "gara"
 pkg "glob"
 pkg "gnuplot"
 # pkg "godot", "nim c -r godot/godot.nim" # --> not yet compatible with Nim 0.19
-pkg "golib"
 # pkg "graphemes"
 pkg "hts", "nim c -o:htss -r src/hts.nim"
 pkg "inim"
@@ -39,18 +38,17 @@ pkg "itertools", "nim doc src/itertools.nim"
 pkg "iterutils"
 pkg "jstin"
 pkg "karax", "nim c -r tests/tester.nim"
-pkg "litestore", "nimble windows_x64_build"
 pkg "loopfusion"
 pkg "msgpack4nim"
 pkg "nake", "nim c nakefile.nim"
 pkg "neo", "nim c -d:blas=openblas tests/all.nim", true
-pkg "nico", "", true
+# pkg "nico", "", true
 pkg "nicy", "nim c src/nicy.nim"
 pkg "nigui", "nim c -o:niguii -r src/nigui.nim"
 pkg "nimcrypto", "nim c -r tests/testapi.nim"
 pkg "NimData", "nim c -o:nimdataa src/nimdata.nim", true
 pkg "nimes", "nim c src/nimes.nim", true
-pkg "nimfp", "nim c -r tests/fp/test_all.nim", true
+pkg "nimfp", "nim c -o:nfp -r src/fp.nim", true
 pkg "nimgame2", "nim c nimgame2/nimgame.nim", true
 pkg "nimgen", "nim c -o:nimgenn -r src/nimgen/runcfg.nim", true
 # pkg "nimlsp", "", true
@@ -67,11 +65,9 @@ pkg "npeg"
 pkg "ormin", "nim c -o:orminn ormin.nim", true
 pkg "parsetoml"
 pkg "patty"
-pkg "pipelines", "nim c -r pipelines/pipelines.nim"
 pkg "plotly", "nim c examples/all.nim", true
 pkg "protobuf", "nim c -o:protobuff -r src/protobuf.nim", true
-pkg "py2nim", "", false, "https://github.com/metacraft-labs/py2nim"
-pkg "random"
+pkg "random", "nim c -r tests/test.nim"
 # pkg "redis"
 pkg "regex", "nim c src/regex", true
 pkg "result", "nim c -r result.nim"
@@ -86,7 +82,6 @@ pkg "tiny_sqlite"
 pkg "unicodedb"
 pkg "unicodeplus", "", true
 pkg "unpack"
-pkg "winim", "", true
 pkg "yaml"
 pkg "zengine", "nim c -o:zngn -r src/zengine.nim", true, "https://github.com/zacharycarter/zengine"
 pkg "zero_functional", "nim c -r test.nim"
